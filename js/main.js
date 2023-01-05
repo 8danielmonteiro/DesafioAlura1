@@ -6,11 +6,11 @@ function criptografar() {
   var boxP = document.getElementById("p").style.display;
   var botaoCopiar = document.getElementById("btn-3").style.display;
   document.getElementById("resultado").value = texto;
-  displayText = "table";
+  displayText = "block";
   displayImg = "none";
   boxH1 = "none";
   boxP = "none";
-  botaoCopiar = "table";
+  botaoCopiar = "block";
   document.getElementById("resultado").style.display = displayText;
   document.getElementById("img-texto").style.display = displayImg;
   document.getElementById("h1").style.display = boxH1;
