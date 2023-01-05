@@ -20,27 +20,38 @@
         <img src="images/logo-a.png" alt="Logo Alura" />
       </div>
       <div class="input-text">
-        <textarea name="Texto" placeholder="Digite seu Texto"></textarea>
+        <textarea
+          name="Texto"
+          placeholder="Digite seu Texto"
+          id="texto"
+        ></textarea>
       </div>
 
       <div class="buttons">
         <p>&#33; Apenas letras minúsculas e sem acento.</p>
-        <button class="btn-1">Criptografar</button
+        <button onclick="criptografar()" class="btn-1">Criptografar</button
         ><button class="btn-2">Descriptografar</button>
       </div>
       <div class="box">
-        <textarea name="resultado" id="resultado" placeholder=""></textarea>
-        <img src="images/img-text.jpg" alt="" />
-        <h1>Nenhuma mensagem encontrada</h1>
-        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-        <button class="btn-3">Copiar</button>
+        <textarea
+          name="resultado"
+          id="resultado"
+          placeholder="Digite um texto que você deseja criptografar ou descriptografar"
+        ></textarea>
+        <img src="images/img-text.jpg" id="img-texto" alt="" />
+        <h1 id="h1">Nenhuma mensagem encontrada</h1>
+        <p id="p">
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
+        <button id="btn-3">Copiar</button>
       </div>
     </main>
     <footer>
       <p>
-        Challenge ONE - Iniciante em Programação <br />Aluno: Daniel Monteiro
-        Pereira <br />Redes Sociais: @8danielmonteiro
+        ALURA Challenge ONE - Iniciante em Programação <br />Aluno: Daniel
+        Monteiro Pereira <br />Redes Sociais: @8danielmonteiro
       </p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
