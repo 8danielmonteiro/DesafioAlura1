@@ -1,0 +1,195 @@
+.view {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f3f5fc;
+}
+.logo-a {
+  position: absolute;
+  top: 2.7vw;
+  left: 2.7vw;
+}
+.logo-a img {
+  width: 12vw;
+}
+.input-text {
+  position: absolute;
+  top: 11.7vw;
+  left: 16.7vw;
+  background-color: #f3f5fc;
+}
+.input-text textarea {
+  background-color: transparent;
+  width: 47vw;
+  height: 35vh;
+  border: none;
+  font-size: 32px;
+  line-height: 48px;
+  padding: 0.5em;
+  font-family: "Inter", sans-serif;
+  color: darkblue;
+}
+.input-text textarea::placeholder {
+  color: darkblue;
+}
+.box {
+  position: absolute;
+  width: 27.7vw;
+  height: 92vh;
+  top: 2.7vw;
+  right: 2.7vw;
+  background-color: white;
+  border-radius: 32px;
+}
+.box textarea {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  width: 23vw;
+  height: 54vw;
+  margin: 2.2vw;
+  border: none;
+}
+.box img {
+  margin: 24vh 2vw 0 2vw;
+  width: 23.5vw;
+}
+
+.box h1 {
+  color: #343a40;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  margin: 2vw 2vw 0 2vw;
+}
+.box p {
+  color: #343a40;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  margin: 1vw 2vw 0 2vw;
+}
+.buttons {
+  position: absolute;
+  bottom: 5vw;
+  left: 16.7vw;
+}
+.buttons p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #495057;
+  margin-bottom: 1vw;
+}
+.btn-1,
+.btn-2,
+.btn-3 {
+  width: 22vw;
+  height: auto;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  padding: 1.6vw;
+  margin-right: 2vw;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.btn-1 {
+  background-color: darkblue;
+  color: #fff;
+  border: none;
+}
+.btn-2 {
+  color: darkblue;
+  background-color: #d8dfe8;
+  border: 1px solid darkblue;
+}
+.btn-3 {
+  display: none;
+  position: absolute;
+  left: 2.2vw;
+  bottom: 2.2vw;
+  background-color: white;
+  color: darkblue;
+  border: 1px solid darkblue;
+}
+.btn-1:active {
+  transform: none;
+  transition: none;
+  background-color: #d8dfe8;
+  color: blue;
+
+  border: 1px solid blue;
+}
+.btn-2:active {
+  transform: none;
+  transition: none;
+  background-color: blue;
+  color: #d8dfe8;
+}
+.btn-3:active {
+  transform: none;
+  transition: none;
+  background-color: blue;
+  color: #d8dfe8;
+}
+@media screen and (max-width: 768px) {
+  .view {
+    height: 100vh;
+  }
+  .logo-a,
+  .input-text,
+  .box,
+  .buttons {
+    position: relative;
+    display: block;
+  }
+  .logo-a {
+    top: 9vw;
+    left: 0;
+  }
+  .input-text {
+    top: 16.7vw;
+    left: 2.7vw;
+    width: 80vw;
+  }
+  .input-text textarea {
+    width: 80vw;
+    height: 55vh;
+    margin-bottom: 10vh;
+  }
+  .box {
+    width: 90vw;
+    height: auto;
+    left: 5vw;
+  }
+  .box img {
+    display: none;
+  }
+  .buttons {
+    width: 90vw;
+    height: auto;
+    left: 5vw;
+    bottom: 0;
+  }
+  .btn-1,
+  .btn-2 {
+    width: 43vw;
+    height: auto;
+    padding: 1.5em 0;
+  }
+  .btn-1 {
+    margin-right: 2vw;
+  }
+  .box textarea {
+    height: 10vw;
+    position: relative;
+    display: none;
+  }
+  .box h1,
+  .box p {
+    padding: 1em;
+  }
+}
