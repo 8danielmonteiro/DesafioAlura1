@@ -77,7 +77,8 @@
   bottom: 5vw;
   left: 16.7vw;
 }
-.buttons p {
+.buttons p,
+footer p {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   color: #495057;
@@ -135,6 +136,11 @@
   background-color: blue;
   color: #d8dfe8;
 }
+footer {
+  background-color: #f3f5fc;
+  margin: 0;
+  padding: 1vw 0 1vw 17vw;
+}
 @media screen and (max-width: 768px) {
   .view {
     height: 100vh;
@@ -191,5 +197,12 @@
   .box h1,
   .box p {
     padding: 1em;
+  }
+  .buttons p {
+    margin-bottom: 3vw;
+    text-align: center;
+  }
+  footer {
+    padding: 1vw 0 1vw 5vw;
   }
 }
