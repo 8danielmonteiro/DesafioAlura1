@@ -30,7 +30,9 @@
       <div class="buttons">
         <p>&#33; Apenas letras minúsculas e sem acento.</p>
         <button onclick="criptografar()" class="btn-1">Criptografar</button
-        ><button class="btn-2">Descriptografar</button>
+        ><button onclick="descriptografar()" class="btn-2">
+          Descriptografar
+        </button>
       </div>
       <div class="box">
         <textarea
@@ -43,7 +45,7 @@
         <p id="p">
           Digite um texto que você deseja criptografar ou descriptografar.
         </p>
-        <button id="btn-3">Copiar</button>
+        <button onclick="copiarTexto()" id="btn-3">Copiar</button>
       </div>
     </main>
     <footer>

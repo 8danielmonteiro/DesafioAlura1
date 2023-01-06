@@ -18,6 +18,30 @@ function criptografar() {
   document.getElementById("btn-3").style.display = botaoCopiar;
 }
 
+function descriptografar() {
+  var texto = document.getElementById("texto").value;
+  var displayText = document.getElementById("resultado").style.display;
+  var displayImg = document.getElementById("img-texto").style.display;
+  var boxH1 = document.getElementById("h1").style.display;
+  var boxP = document.getElementById("p").style.display;
+  var botaoCopiar = document.getElementById("btn-3").style.display;
+  document.getElementById("resultado").value = texto;
+  displayText = "block";
+  displayImg = "none";
+  boxH1 = "none";
+  boxP = "none";
+  botaoCopiar = "block";
+  document.getElementById("resultado").style.display = displayText;
+  document.getElementById("img-texto").style.display = displayImg;
+  document.getElementById("h1").style.display = boxH1;
+  document.getElementById("p").style.display = boxP;
+  document.getElementById("btn-3").style.display = botaoCopiar;
+}
+function copiarTexto() {
+  var textoCopiado = document.getElementById("resultado");
+  textoCopiado.select();
+  document.execCommand("copy", String);
+}
 /*etapas 
 1 - armazenar o texto ao clicar no botao criptografar
 2 - modificar o texto conforme a criptografia definida
