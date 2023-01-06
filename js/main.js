@@ -5,6 +5,14 @@ function criptografar() {
   var boxH1 = document.getElementById("h1").style.display;
   var boxP = document.getElementById("p").style.display;
   var botaoCopiar = document.getElementById("btn-3").style.display;
+
+  texto = texto.replace(/e/g, "enter");
+  texto = texto.replace(/i/g, "imes");
+
+  texto = texto.replace(/a/g, "ai");
+  texto = texto.replace(/o/g, "ober");
+  texto = texto.replace(/u/g, "ufat");
+
   document.getElementById("resultado").value = texto;
   displayText = "block";
   displayImg = "none";
@@ -25,6 +33,12 @@ function descriptografar() {
   var boxH1 = document.getElementById("h1").style.display;
   var boxP = document.getElementById("p").style.display;
   var botaoCopiar = document.getElementById("btn-3").style.display;
+
+  texto = texto.replace(/enter/g, "e");
+  texto = texto.replace(/imes/g, "i");
+  texto = texto.replace(/ai/g, "a");
+  texto = texto.replace(/ober/g, "o");
+  texto = texto.replace(/ufat/g, "u");
   document.getElementById("resultado").value = texto;
   displayText = "block";
   displayImg = "none";
@@ -40,7 +54,7 @@ function descriptografar() {
 function copiarTexto() {
   var textoCopiado = document.getElementById("resultado");
   textoCopiado.select();
-  document.execCommand("copy", String);
+  document.execCommand("copy");
 }
 /*etapas 
 1 - armazenar o texto ao clicar no botao criptografar
