@@ -1,5 +1,5 @@
-# DesafioAlura1
-Primeiro desafio do Curso de Programação da Alura - Oracle ONE
+# Desafio Alura
+## Primeiro desafio do Curso de Programação da Alura - Oracle ONE
 
 Olá, meu nome é Daniel Monteiro Pereira, e esse é o primeiro desafio realizado para o Curso de Programação da Alura
 
